@@ -1,9 +1,9 @@
-var PORT = process.env.PORT || 5000;
-
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
+
+var PORT = process.env.PORT || 5000;
 
 ReactDOM.render(
   <React.StrictMode>
