@@ -51,7 +51,9 @@ class App extends Component {
               return (
                 <li key={item.id}>
                   {item.value}
-                  <button onClick={() => this.deleteItem(item.id)}>x</button>
+                  <button onClick={() => this.deleteItem(item.id)}>
+                    Delete
+                  </button>
                 </li>
               );
             })}
