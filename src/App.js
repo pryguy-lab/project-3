@@ -35,7 +35,6 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header>Ella's todo list</header>
         <div>
           Add an item...
           <br />
