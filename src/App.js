@@ -34,7 +34,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div class="border-solid border-4 border-gray-600 lg:border-double">
         <div>
           Add an item...
           <br />
@@ -44,7 +44,12 @@ class App extends Component {
             value={this.state.newItem}
             onChange={(e) => this.updateInput("newItem", e.target.value)}
           />
-          <button onClick={() => this.addItem()}>Add</button>
+          <button
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
+            onClick={() => this.addItem()}
+          >
+            Add
+          </button>
           <br />
           <ul>
             {this.state.list.map((item) => {
