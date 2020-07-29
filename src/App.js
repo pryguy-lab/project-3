@@ -34,7 +34,8 @@ class App extends Component {
 
   render() {
     return (
-      <div class="lg:container lg:mx-auto">
+      <div>
+        <h1>hello Ella!</h1>
         <div>
           Add an item...
           <br />
