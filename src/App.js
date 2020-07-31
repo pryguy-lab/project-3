@@ -1,4 +1,11 @@
 import React, { Component } from "react";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+
+import Home from "./components/Home";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Error from "./components/Error";
+import Navigation from "./components/Navigation";
 
 class App extends Component {
   constructor(props) {
@@ -34,8 +41,15 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <BrowserRouter>
         <body class="border-8 border-gray-600 text-center h-screen bg-blue-100">
+          <Navigation />
+          <Switch>
+            <Route path="/" component={Home} exact />
+            <Route path="/about" component={About} />
+            <Route path="/contact" component={Contact} />
+            <Route component={Error} />
+          </Switch>
           <header class="text-6xl text-blue-400">todo list</header>
           <div class="text-4xl mb-8 ml-4">
             Add an item...
@@ -76,7 +90,7 @@ class App extends Component {
             </ul>
           </div>
         </body>
-      </div>
+      </BrowserRouter>
     );
   }
 }
