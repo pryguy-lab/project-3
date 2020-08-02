@@ -10,7 +10,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 function App() {
   return (
     <Router>
-      <div class="text-center border-8 bg-indigo-300 border-gray-600 text-center h-screen">
+      <div class="max-screen-sm text-center border-8 bg-indigo-300 border-gray-600 text-center h-screen">
         <Nav />
         <Switch>
           <Route path="/Home" component={Home} />
