@@ -1,10 +1,13 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import Logo from "../../src/star.png";
 
 function Nav() {
   return (
-    <nav class="bg-gray-800 p-2 px-4 py-2 flex justify-between items-center text-opacity-75 text-white">
-      <h3>logo</h3>
+    <nav class="bg-black p-1 px-4 py-2 flex justify-between items-center text-opacity-75 text-white">
+      <h3>
+        <img src={Logo} />
+      </h3>
       <ul class=" flex justify-around items-center mx-4">
         <Link to="/Home">
           <li class="mx-4 text-red-400">Home</li>

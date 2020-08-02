@@ -1,11 +1,13 @@
 import React, { Component } from "react";
 
-function About() {
-  return (
-    <div>
-      <h3 class="text-4xl text-yellow-900">About Page</h3>
-    </div>
-  );
-}
+const Checkbox = ({ checked }) => (
+  <div>
+    <input type="checkbox" checked={checked} />
+  </div>
+);
 
-export default About;
+Checkbox.defaultProps = {
+  checked: true,
+};
+
+export default Checkbox;
