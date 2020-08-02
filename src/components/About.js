@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 
-const About = () => {
+function About() {
   return (
     <div>
-      <p>About</p>
+      <h3 class="text-4xl text-yellow-900">About Page</h3>
     </div>
   );
-};
+}
 
 export default About;
