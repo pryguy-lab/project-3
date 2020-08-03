@@ -36,7 +36,7 @@ class Todo extends Component {
     return (
       <body>
         <header class="text-4xl text-teal-700">todo list</header>
-        <div class="text-2xl mb-2 ml-4">
+        <div class="text-2xl mb-2 mt-8 ml-4">
           Add an item...
           <br />
         </div>

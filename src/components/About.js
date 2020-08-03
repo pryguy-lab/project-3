@@ -1,13 +1,14 @@
 import React, { Component } from "react";
 
-const Checkbox = ({ checked }) => (
-  <div>
-    <input type="checkbox" checked={checked} />
-  </div>
-);
+class About extends Component {
+  state = {};
+  render() {
+    return (
+      <div>
+        <header class="text-4xl text-orange-700">About</header>
+      </div>
+    );
+  }
+}
 
-Checkbox.defaultProps = {
-  checked: true,
-};
-
-export default Checkbox;
+export default About;
