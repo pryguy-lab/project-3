@@ -35,14 +35,14 @@ class Todo extends Component {
   render() {
     return (
       <body>
-        <header class="text-4xl text-teal-700">todo list</header>
+        <header className="text-4xl text-teal-700">todo list</header>
         <div class="text-2xl mb-2 mt-8 ml-4">
           Add an item...
           <br />
         </div>
         <div>
           <input
-            class="bg-blue-200 hover:bg-blue-400 text-black font-bold py-2 px-4 mx-4 placeholder-purple-900 mb-4"
+            className="bg-blue-200 hover:bg-blue-400 text-black font-bold py-2 px-4 mx-4 placeholder-purple-900 mb-4"
             type="text"
             placeholder="Type item here..."
             value={this.state.newItem}
@@ -50,7 +50,7 @@ class Todo extends Component {
           />
 
           <button
-            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
             onClick={() => this.addItem()}
           >
             Add
@@ -60,12 +60,12 @@ class Todo extends Component {
             {this.state.list.map((item) => {
               return (
                 <li
-                  class="text-black font-bold text-1xl text-center"
+                  className="text-black font-bold text-1xl text-center"
                   key={item.id}
                 >
                   {item.value}
                   <button
-                    class="ml-8 bg-red-700 hover:bg-red-500 text-white font-bold mt-3 py-1 px-1 rounded"
+                    className="ml-8 bg-red-700 hover:bg-red-500 text-white font-bold mt-3 py-1 px-1 rounded"
                     onClick={() => this.deleteItem(item.id)}
                   >
                     Remove

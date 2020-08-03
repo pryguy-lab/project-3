@@ -16,15 +16,16 @@ class Contact extends Component {
   };
   onSubmit = (e) => {
     e.preventDefault();
+    this.props.onSubmit();
     console.log(this.state);
   };
   render() {
     return (
       <div>
-        <header class="text-4xl text-blue-900">Contact us</header>
-        <form class="mt-8" action="">
+        <header className="text-4xl text-blue-900">Contact us</header>
+        <form className="mt-8" action="">
           <input
-            class="my-2 rounded"
+            className="my-2 rounded"
             name="firstName"
             type="text"
             placeholder="First name"
@@ -33,7 +34,7 @@ class Contact extends Component {
           />
           <br />
           <input
-            class="my-2 rounded"
+            className="my-2 rounded"
             name="lastName"
             type="text"
             placeholder="Last name"
@@ -42,7 +43,7 @@ class Contact extends Component {
           />
           <br />
           <input
-            class="my-2 rounded"
+            className="my-2 rounded"
             name="userName"
             type="text"
             placeholder="User name"
@@ -51,7 +52,7 @@ class Contact extends Component {
           />
           <br />
           <input
-            class="my-2 rounded"
+            className="my-2 rounded"
             name="email"
             type="text"
             placeholder="email"
@@ -60,7 +61,7 @@ class Contact extends Component {
           />
           <br />
           <input
-            class="my-2 mb-8 rounded"
+            className="my-2 mb-8 rounded"
             name="password"
             type="password"
             placeholder="Password"
@@ -69,7 +70,7 @@ class Contact extends Component {
           />
         </form>
         <button
-          class="bg-blue-800 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full"
+          className="bg-blue-800 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full"
           onClick={(e) => this.onSubmit(e)}
         >
           Submit

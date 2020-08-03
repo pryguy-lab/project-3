@@ -10,10 +10,10 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 function App() {
   return (
     <Router>
-      <div class="max-screen-sm text-center border-8 bg-indigo-300 border-gray-600 text-center h-screen">
+      <div className="max-screen-sm text-center border-8 bg-indigo-300 border-gray-600 text-center h-screen">
         <Nav />
         <Switch>
-          <Route path="/Home" component={Home} />
+          <Route path="/" component={Home} exact={true} />
           <Route path="/about" component={About} />
           <Route path="/Todo" component={Todo} />
           <Route path="/Contact" component={Contact} />
