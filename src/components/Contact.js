@@ -23,9 +23,9 @@ class Contact extends Component {
     return (
       <div>
         <header className="text-4xl text-blue-900">Contact us</header>
-        <form className="mt-8" action="">
+        <form className="mt-8 " action="">
           <input
-            className="my-2 rounded"
+            className="my-2 rounded bg-blue-300 hover:bg-blue-500 text-black font-bold py-2 px-4 mx-4 placeholder-purple-900 mb-4"
             name="firstName"
             type="text"
             placeholder="First name"
@@ -34,7 +34,7 @@ class Contact extends Component {
           />
           <br />
           <input
-            className="my-2 rounded"
+            className="my-2 rounded bg-blue-300 hover:bg-blue-500 text-black font-bold py-2 px-4 mx-4 placeholder-purple-900 mb-4"
             name="lastName"
             type="text"
             placeholder="Last name"
@@ -43,7 +43,7 @@ class Contact extends Component {
           />
           <br />
           <input
-            className="my-2 rounded"
+            className="my-2 rounded bg-blue-300 hover:bg-blue-500 text-black font-bold py-2 px-4 mx-4 placeholder-purple-900 mb-4"
             name="userName"
             type="text"
             placeholder="User name"
@@ -52,7 +52,7 @@ class Contact extends Component {
           />
           <br />
           <input
-            className="my-2 rounded"
+            className="my-2 rounded bg-blue-300 hover:bg-blue-500 text-black font-bold py-2 px-4 mx-4 placeholder-purple-900 mb-4"
             name="email"
             type="text"
             placeholder="email"
@@ -61,7 +61,7 @@ class Contact extends Component {
           />
           <br />
           <input
-            className="my-2 mb-8 rounded"
+            className="my-2 mb-8 rounded bg-blue-300 hover:bg-blue-500 text-black font-bold py-2 px-4 mx-4 placeholder-purple-900 mb-4"
             name="password"
             type="password"
             placeholder="Password"

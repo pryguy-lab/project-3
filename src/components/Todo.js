@@ -35,14 +35,14 @@ class Todo extends Component {
   render() {
     return (
       <body>
-        <header className="text-4xl text-teal-700">todo list</header>
-        <div class="text-2xl mb-2 mt-8 ml-4">
+        <header className="text-4xl text-teal-800">todo list</header>
+        <div className="text-2xl mb-2 mt-8 ml-4 text-black-700">
           Add an item...
           <br />
         </div>
         <div>
           <input
-            className="bg-blue-200 hover:bg-blue-400 text-black font-bold py-2 px-4 mx-4 placeholder-purple-900 mb-4"
+            className="bg-blue-300 hover:bg-blue-500 text-black font-bold py-2 px-4 mx-4 placeholder-purple-900 mb-4"
             type="text"
             placeholder="Type item here..."
             value={this.state.newItem}
