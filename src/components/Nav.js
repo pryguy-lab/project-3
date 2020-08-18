@@ -15,7 +15,7 @@ function Nav() {
         <Link to="/Todo">
           <li className="mx-4 text-teal-400">todo</li>
         </Link>
-        <Link to="/Contact">
+        <Link to="/Form">
           <li className="mx-4 text-blue-400">Contact</li>
         </Link>
         <Link to="/About">

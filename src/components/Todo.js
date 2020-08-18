@@ -34,7 +34,7 @@ class Todo extends Component {
 
   render() {
     return (
-      <body>
+      <React.Fragment>
         <header className="text-4xl text-teal-800">todo list</header>
         <div className="text-2xl mb-2 mt-8 ml-4 text-black-700">
           Add an item...
@@ -75,7 +75,7 @@ class Todo extends Component {
             })}
           </ul>
         </div>
-      </body>
+      </React.Fragment>
     );
   }
 }
