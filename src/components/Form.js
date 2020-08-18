@@ -40,7 +40,7 @@ class Form extends Component {
         <header className=" text-4xl text-teal-700">Contact us</header>
         <form className="mt-4 " action="">
           <input
-            className="my-2 rounded bg-green-200 hover:bg-green-400 text-black font-bold py-2 px-4 mx-4 placeholder-purple-900 mb-4"
+            className="my-2 rounded bg-green-200 hover:bg-green-400 text-black font-bold py-1 px-8 mx-8 placeholder-purple-900 mb-4"
             name="firstName"
             type="text"
             placeholder="First name"
@@ -49,7 +49,7 @@ class Form extends Component {
           />
           <br />
           <input
-            className="my-2 rounded bg-green-200 hover:bg-green-400 text-black font-bold py-2 px-4 mx-4 placeholder-purple-900 mb-4"
+            className="my-2 rounded bg-green-200 hover:bg-green-400 text-black font-bold py-1 px-8 mx-8 placeholder-purple-900 mb-4"
             name="lastName"
             type="text"
             placeholder="Last name"
@@ -58,7 +58,7 @@ class Form extends Component {
           />
           <br />
           <input
-            className="my-2 rounded bg-green-200 hover:bg-green-400 text-black font-bold py-2 px-4 mx-4 placeholder-purple-900 mb-4"
+            className="my-2 rounded bg-green-200 hover:bg-green-400 text-black font-bold py-1 px-8 mx-8 placeholder-purple-900 mb-4"
             name="userName"
             type="text"
             placeholder="User name"
@@ -67,7 +67,7 @@ class Form extends Component {
           />
           <br />
           <input
-            className="my-2 rounded bg-green-200 hover:bg-green-400 text-black font-bold py-2 px-4 mx-4 placeholder-purple-900 mb-4"
+            className="my-2 rounded bg-green-200 hover:bg-green-400 text-black font-bold py-1 px-8 mx-8 placeholder-purple-900 mb-4"
             name="email"
             type="text"
             placeholder="email"
@@ -76,7 +76,7 @@ class Form extends Component {
           />
           <br />
           <input
-            className="my-2 mb-8 rounded bg-green-200 hover:bg-green-400 text-black font-bold py-2 px-4 mx-4 placeholder-purple-900 mb-4"
+            className="my-2 mb-8 rounded bg-green-200 hover:bg-green-400 text-black font-bold py-1 px-8 mx-8 placeholder-purple-900 mb-4"
             name="password"
             type="password"
             placeholder="Password"
@@ -85,7 +85,7 @@ class Form extends Component {
           />
         </form>
         <button
-          className="bg-blue-800 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full"
+          className="bg-blue-800 hover:bg-green-700 text-white font-bold py-1 px-2 rounded-full"
           onClick={(e) => this.onSubmit(e)}
         >
           Submit
